@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.13"
 
 [[package]]
@@ -525,7 +525,7 @@ wheels = [
 ]
 
 [[package]]
-name = "mcp-on-cloudrun"
+name = "mcp-on-rhx"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
