@@ -1,0 +1,8 @@
+[project]
+name = "mcp-on-rhx"
+version = "0.1.0"
+description = "MCP server for RHX"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp==2.12.4",
+]
