@@ -1,0 +1,27 @@
+{
+  "servers": {
+    "rancher": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@futuretea/rancher-mcp-server@latest",
+        "--rancher-server-url",
+        "https://console.railigent.host",
+        "--rancher-token",
+        "token-knpwd:m9zcdj5s5wg4sz2gqnt8bw24tlnbq2czskffjqqjfmxfwcd26bl82v"
+      ],
+    },
+    "argocd-mcp-stdio": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "argocd-mcp@latest",
+        "stdio"
+      ],
+      "env": {
+        "ARGOCD_BASE_URL": "https://argocd.railigent.host",
+        "ARGOCD_API_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJtY3A6YXBpS2V5IiwibmJmIjoxNzY1ODAwNDAzLCJpYXQiOjE3NjU4MDA0MDMsImp0aSI6IjdkNjNlYjljLTI4MTQtNDg3Zi05MDI1LWRjYWI0MjZhZDJlZSJ9.ZRcP0ir4Qn4qIJxswqZB3xCOoGTSRWXupCblqVD06S8"
+      }
+    }
+  }
+}
