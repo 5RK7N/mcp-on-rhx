@@ -2,15 +2,21 @@
   "servers": {
     "rancher": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@futuretea/rancher-mcp-server@latest",
-        "--rancher-server-url",
-        "https://console.railigent.host",
-        "--rancher-token",
-        "token-knpwd:m9zcdj5s5wg4sz2gqnt8bw24tlnbq2czskffjqqjfmxfwcd26bl82v"
-      ],
+      "args": ["-y", "@gorizond/mcp-rancher-multi"],
+      "env": {
+        "RANCHER_URL": "https://console.railigent.host",
+        "RANCHER_BEARER_TOKEN": "token-knpwd:m9zcdj5s5wg4sz2gqnt8bw24tlnbq2czskffjqqjfmxfwcd26bl82v"
+      }
     },
+    // "harbor": {
+    //   "command": "npx",
+    //   "args": ["mcp-harbor-server@lastest"], 
+    //   "env": {
+    //     "HARBOR_URL": "https://artifacts.railigent.host",
+    //     "HARBOR_USERNAME": "admin",
+    //     "HARBOR_PASSWORD": "Cr2Mm8QjZVbHrSOjLo8K"
+    //   }
+    // },
     "argocd-mcp-stdio": {
       "type": "stdio",
       "command": "npx",
