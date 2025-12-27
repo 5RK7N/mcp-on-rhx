@@ -1,8 +1,8 @@
 {
   "servers": {
-    "rhx": {
+    "railigent": {
       "type": "http",
-      "url": "https://mcp.railigent.host/mcp"
+      "url": "https://lotse.railigent.host/mcp"
     }
   }
 }
